@@ -10,17 +10,15 @@ class ProductController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-        //
+    public function index() {
+    return view('products.index'); 
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
-    {
-        //
+    public function create() {
+    return view('products.create');
     }
 
     /**
@@ -34,17 +32,16 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Product $product)
-    {
-        //
-    }
+    public function show($id)
+{
+    return view('products.show'); //
+}
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Product $product)
-    {
-        //
+    public function edit($id) {
+    return view('products.edit');
     }
 
     /**
